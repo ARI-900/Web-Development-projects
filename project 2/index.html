@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE = edge" />
+    <meta name="viewport" content="width = device-width" initial-scale =1.0 />
+   <link rel="stylesheet" href="stylesheet.css" />
+    <title>Job Application Form</title>
+</head>
+<body>
+<div class="main">
+    <div class="box-contain">
+        <h2> Job Application <span id="one">(web)</span> </h2>
+        
+        <form action="">
+            <div class="form-cotainer">
+                <div class="blk">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" autofocus, required />
+                </div>
+                <div class="blk">
+                     <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" required />
+                </div>
+            </div>
+            <div class="form-cotainer">
+                <div class="blk">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" required />
+                </div>
+                <div class="blk">
+                     <label for="Job Role">Job Role</label>
+                     
+                   <select name="job-role" id="Job Role">
+                       <option value="">Select Job Role</option>
+                       <option value="Frontend">Frontend Developer</option>
+                       <option value="Backend">Backend Developer</option>
+                       <option value="">Web Designer</option>
+                   </select>
+                </div>
+            </div>
+             <div class="form-cotainer">   
+                <div class="blk">
+                   <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="50" rows="4" placeholder="Address here ..."></textarea>
+                </div>
+            </div>
+            <div class="form-cotainer">
+                 <div class="blk">
+                   <label for="City">City</label>
+                    <input type="text" name="city" id="City" required />
+                </div>
+                
+                 <div class="blk">
+                   <label for="Pin Code">Pin Code</label>
+                    <input type="number" name="Pin Code" id="Pin Code" required />
+                </div>
+            </div>
+            <div class="form-cotainer">  
+                <div class="blk">
+                   <label for="date">Start Date</label>
+                    <input type="date" name="date" id="date" required />
+                </div>
+                
+                 <div class="blk">
+                   <label for="Upload-File">Upload File</label>
+                    <input type="file" name="Upload FileUpload File" id="Upload-File" required style="border: 0px;" />
+                </div>
+           </div> 
+           <div class="button">
+               <button type="" name="button" id="button">
+                   SUBMIT
+               </button>
+           </div>
+        </form>
+</div>
+    </div>
+</body>
+</html>

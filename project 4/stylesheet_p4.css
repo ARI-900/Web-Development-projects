@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    line-height: 1.3;
+    font-weight: 300;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+.bimg1{
+    background-image: url(images/developer.png);
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.text_container{
+       color: whitesmoke;
+        max-width: 900px;
+       margin: 0 auto;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+#one{
+    font-size: 72px;
+    font-weight: 400;
+    
+}
+#two{
+    font-size: 72px;
+    font-weight: 350;
+}
+.stext{
+    min-height: 100px;
+    background-color:black;
+    text-align: center;
+}
+.text_container2{
+     max-width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+      
+}
+.text_container2 h1{
+    font-size: 50px;
+    font-weight: lighter;
+}
+.work{
+        color: #000;
+       display: grid;
+     grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));    
+    max-width: 1100px;
+    margin: 20px auto;
+  
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    max-width: 320px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1,1,5,0.3);
+     transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1,1,5,0.5);
+    transition: 0.5s ease-in-out;
+}
+.card_content{
+    padding: 20px;  
+}
+.card_content h3{
+    padding-bottom: 10px;
+}
+.bottom{
+
+    display: flex;
+    color: antiquewhite;
+    
+}
+.contact{
+    background-color: #515603;
+}
+.about{
+    background-color:brown;
+}
+.contact, .about{
+    min-height: 300px;
+    padding: 32px;
+}
+.contact p,
+.about p{
+/*        margin-bottom: 20px;*/
+    line-height: 1.7;
+    font-size: 15px;
+}
+.contact h2,
+.about h2{
+       font-size: 35px;
+    font-weight:300;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+    background-color: #000;
+    padding: 20px;
+    min-height: 20px;
+    font-family: monospace;
+}
+    
+@media (max-width:786px){
+    .text_container h2{
+        font-weight: 200;
+    }
+    #one{
+        font-size: 32px;
+    }
+    
+    .text_container2 h1{
+        font-size: 30px;
+    }
+    #two{
+        font-size: 40px;
+    }
+    .contact h2,
+    .about h2{
+              font-size: 25px;
+        padding-bottom: 15px;
+    }
+    
+    .contact p,
+    .about p{
+        text-align: justify;
+        font-size: 13px;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,123 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body{
+            font-weight: 300px;
+            
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+/*        NAVIGATION*/
+        nav{
+             box-shadow: 5px 5px 5px gray;
+            position:sticky;
+            top: 0px;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 32px;
+            z-index: 50;
+        }
+        .navigation{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 25px; 
+            
+        }
+        .fa-sharp{
+            margin: auto;    /* Align 'THE PARK' in center*/
+        }
+        .hero_img{
+            height: 500px;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("https://www.theparkhotels.com/images/site-specific/indore/home/banner-pic.jpg");
+              margin-bottom: 32px;
+        }
+    
+        .hero_text{
+            font-size: 30px;
+            color: aliceblue;
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid rgba(255,255,255,0.88);
+            border-radius: 5px;
+            padding: 8px;
+            background-color: rgba(44, 62, 80,0.88);
+            
+        }
+    .tribute_sectin{
+            display: flex;
+            margin-bottom: 32px;
+    }
+    .tri_col1{
+        width: 30%;
+        margin-right: 2.5px;
+        background-color:antiquewhite;
+         border-radius: 10px;
+    }
+.tri_col1 h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+     font-family: 'Roboto', sans-serif;
+     opacity: 0.8; 
+}
+.tri_col1 p{
+     font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0.7; 
+}
+.tri_col1 img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tri_col2{
+    width: 70%;
+    display: grid;
+    column-gap: 5px;
+    grid-template-areas: 
+        "I1 I2 I3";
+}
+.imgI1{
+    grid-area: I1;
+}
+.imgI2{
+    grid-area: I2;
+}
+.imgI3{
+    grid-area: I3;
+}
+.imgitem{
+    width: 276px;
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+}
+.imgitem:hover{
+    transform: scale(1.02);
+       transition: 0.8s ease-in-out;
+    box-shadow: 0px 3px 5px gray;
+}
+
+@media (max-width:786px){
+  
+}
+}
