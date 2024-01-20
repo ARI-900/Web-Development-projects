@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task</title>
+
+    <style>
+        #heading{
+            text-align: center;
+        }
+        table,th,td{
+            border: 2px solid black;
+            height: 30px;
+            width: 500px;
+            /* border-collapse: collapse; */
+        }
+        .col8{
+            background-color:yellow;
+        }
+        .col5{
+            background-color: plum;
+        }
+        .col2{
+            background-color: greenyellow;
+        }
+
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="heading">TABLE</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topics</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" class="col8">8.00 a.m</td>
+            <td rowspan="2" class="col5">5.00 p.m</td>
+            <td>Introduction of HTML</td>
+           </tr>
+           <tr>
+            <td>Tags of HTML</td>
+           </tr>
+           <!-- 2nd row -->
+           <tr>
+            <td rowspan="3">Tuesday</td>
+            <td class="col8">8.00 a.m</td>
+            <td class="col8">11.00 a.m</td>
+            <td>X path</td>
+           </tr>
+
+           <tr>
+            <td class="col8">11.00 a.m</td>
+            <td class="col2">2.00 p.m</td>
+            <td rowspan="2">Css Introduction</td>
+           </tr>
+
+           <tr>
+               <td class="col2">2.00 p.m</td>
+               <td class="col5">5.00 p.m</td>       
+           </tr>
+
+           <!-- 3rd row -->
+           <tr>
+                <td>Wednesday</td>
+                <td class="col8">8.00 p.m</td>
+                <td class="col2">12.00 p.m</td>
+                <td>Java Script</td>
+           </tr>
+           
+        </tbody>
+
+    </table>
+
+</body>
+</html>

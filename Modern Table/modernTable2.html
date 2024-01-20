@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Class</title>
+
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            height: 20px;
+            width: 300px;
+            
+        }
+        tbody:hover{
+            background-color:navy;
+            color: yellow;
+        }
+        tbody{
+            background-color: #333333;
+            color: aliceblue;
+        }
+        caption{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            caption-side: bottom;
+            font-size: larger;
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- pre tag -->
+    <pre>
+        <span style="font-size:25px; color: red; text-decoration: underline ;">Poem</span>
+        Yar tera 
+        superstar dasi
+        kala kar!
+    </pre>
+    <hr color="red">
+
+    <!-- making text backgrfound center align -->
+    <h1><u>Text formating </u></h1>
+
+    <p style="background-color: dodgerblue; display: inline;">My name is khan </p>
+    <br>
+    <!-- Formating Tag -->
+
+    <b>I am fine</b><br>
+    <strong>I am fine</strong><br>
+    <em>I am fine</em><br>
+    <mark style="background-color: black; color:white;">I am fine</mark><br>
+    <del>I am fine</del><br>
+
+
+    <hr>
+
+    <!-- Tables in html -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Sid</th>
+                <th>Sname</th>
+                <th>Sclass</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Arijit Chowdhury</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Subrata Chowdhury</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Shubhajit Chowdhury</td>
+                <td>11</td>
+            </tr>
+        </tbody>
+        <caption>Student Table</caption>
+    </table>
+    
+    <hr/><hr>
+    <!-- table 2 -->
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>2500</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>4850</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>12450</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <hr>
+
+
+    
+    <!-- form making -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Welcome to DotNet</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td><label for="usename">usename</label></td>
+                <td><input type="text" name="usename" id="usename"></td>
+            </tr>
+            <tr>
+                <td><label for="password">password</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr >
+                <td colspan="2"><input type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
